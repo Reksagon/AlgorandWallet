@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Algorand Wallet</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hi_this_is">Hi! This is your best crypto wallet. \nLog in and begin to earn! \n</string>
+    <string name="log_in_txt">To restore access to your wallet, enter your mnemonic phrase consisting of 25 words in the correct order.</string>
+    <string name="log_error">Mnemonic Phrase is incorrect</string>
+</resources>
