@@ -77,13 +77,16 @@ public class LogInFragment extends Fragment {
             @SuppressLint("UseCompatLoadingForDrawables")
             @Override
             public void onClick(View view) {
-                binding.editTextTextMultiLine.setBackground(getActivity().getDrawable(R.drawable.edittext_bg_red));
-                binding.editTextTextMultiLine.setTextColor(getActivity().getColor(R.color.red));
-                error = true;
-                binding.logInBttn.setEnabled(false);
-                binding.textViewLog.setText(getActivity().getString(R.string.log_error));
-
-                startActivity(new Intent(getActivity(), MainActivity.class));
+                if(binding.editTextTextMultiLine.getText().toString().equals("coin shadow scout material because silly kidney shove tank another strong strong field hover live indicate expand wisdom piece fatigue hair agent drum hire party"))
+                    startActivity(new Intent(getActivity(), MainActivity.class));
+                else
+                {
+                    binding.editTextTextMultiLine.setBackground(getActivity().getDrawable(R.drawable.edittext_bg_red));
+                    binding.editTextTextMultiLine.setTextColor(getActivity().getColor(R.color.red));
+                    error = true;
+                    binding.logInBttn.setEnabled(false);
+                    binding.textViewLog.setText(getActivity().getString(R.string.log_error));
+                }
             }
         });
 

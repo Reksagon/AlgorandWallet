@@ -64,7 +64,7 @@ public class RecieveFragment extends Fragment {
                     @Override
                     protected void onPostExecute(Void unused) {
                         super.onPostExecute(unused);
-                        binding.copied.setVisibility(View.GONE);
+                        binding.copied.setVisibility(View.INVISIBLE);
                     }
 
                     @Override
