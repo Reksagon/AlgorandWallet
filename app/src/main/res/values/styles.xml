@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavigationViewTextStyle">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">8sp</item>
+    </style>
+    <style name="FloatingButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="colorSecondary">@color/red</item>
+        <item name="colorOnSecondary">#00FFFFFF</item>
+    </style>
+</resources>

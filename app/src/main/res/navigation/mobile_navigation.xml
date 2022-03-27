@@ -3,23 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_wallet">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.algorand.wallet.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_wallet"
+        android:name="com.algorand.wallet.ui.wallet.WalletFragment"
+        android:label="@string/title_wallet"
+        tools:layout="@layout/fragment_wallet" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.algorand.wallet.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_news"
+        android:name="com.algorand.wallet.ui.news.NewsFragment"
+        android:label="@string/title_news"
+        tools:layout="@layout/fragment_news" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.algorand.wallet.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_swap"
+        android:name="com.algorand.wallet.ui.swap.SwapFragment"
+        android:label="@string/title_swap"
+        tools:layout="@layout/fragment_swap" />
+    <fragment
+        android:id="@+id/navigation_transactions"
+        android:name="com.algorand.wallet.ui.transactions.TransactionsFragment"
+        android:label="fragment_transactions"
+        tools:layout="@layout/fragment_transactions" />
 </navigation>
