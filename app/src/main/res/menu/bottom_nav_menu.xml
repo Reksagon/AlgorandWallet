@@ -21,4 +21,10 @@
         android:icon="@drawable/ic_transactions"
         android:title="@string/title_transactions" />
 
+    <item
+        android:id="@+id/navigation_recieve"
+        android:title="recieve"
+        android:visible="false" />
+
+
 </menu>

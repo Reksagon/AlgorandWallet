@@ -14,9 +14,9 @@
         android:fontFamily="@font/roboto"
         android:text="Swap"
         android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/floatingActionButton2"
-        app:layout_constraintStart_toStartOf="@+id/floatingActionButton2"
-        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton" />
+        app:layout_constraintEnd_toEndOf="@+id/bttn_swap"
+        app:layout_constraintStart_toStartOf="@+id/bttn_swap"
+        app:layout_constraintTop_toBottomOf="@+id/bttn_send" />
 
     <TextView
         android:id="@+id/textView"
@@ -64,7 +64,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/bttn_send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
@@ -74,13 +74,13 @@
         android:tint="@color/black"
         app:backgroundTint="#FFFFFF"
         app:fabSize="normal"
-        app:layout_constraintEnd_toStartOf="@+id/floatingActionButton3"
+        app:layout_constraintEnd_toStartOf="@+id/bttn_recieve"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toBottomOf="@+id/view"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
+        android:id="@+id/bttn_swap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
@@ -91,12 +91,12 @@
         app:backgroundTint="#FFFFFF"
         app:fabSize="normal"
         app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintStart_toEndOf="@+id/floatingActionButton3"
+        app:layout_constraintStart_toEndOf="@+id/bttn_recieve"
         app:layout_constraintTop_toBottomOf="@+id/view"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton3"
+        android:id="@+id/bttn_recieve"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
@@ -119,9 +119,9 @@
         android:fontFamily="@font/roboto"
         android:text="Send"
         android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/floatingActionButton"
-        app:layout_constraintStart_toStartOf="@+id/floatingActionButton"
-        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton" />
+        app:layout_constraintEnd_toEndOf="@+id/bttn_send"
+        app:layout_constraintStart_toStartOf="@+id/bttn_send"
+        app:layout_constraintTop_toBottomOf="@+id/bttn_send" />
 
     <TextView
         android:id="@+id/textView7"
@@ -131,9 +131,9 @@
         android:fontFamily="@font/roboto"
         android:text="Recieve"
         android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/floatingActionButton3"
-        app:layout_constraintStart_toStartOf="@+id/floatingActionButton3"
-        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton" />
+        app:layout_constraintEnd_toEndOf="@+id/bttn_recieve"
+        app:layout_constraintStart_toStartOf="@+id/bttn_recieve"
+        app:layout_constraintTop_toBottomOf="@+id/bttn_send" />
 
     <ScrollView
         android:layout_width="0dp"

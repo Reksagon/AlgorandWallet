@@ -27,4 +27,14 @@
         android:name="com.algorand.wallet.ui.transactions.TransactionsFragment"
         android:label="fragment_transactions"
         tools:layout="@layout/fragment_transactions" />
+    <fragment
+        android:id="@+id/navigation_recieve"
+        android:name="com.algorand.wallet.ui.wallet.RecieveFragment"
+        android:label="fragment_recieve"
+        tools:layout="@layout/fragment_recieve" />
+    <fragment
+        android:id="@+id/navigation_send"
+        android:name="com.algorand.wallet.ui.wallet.SendFragment"
+        android:label="fragment_send"
+        tools:layout="@layout/fragment_send" />
 </navigation>

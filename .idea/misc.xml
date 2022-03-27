@@ -3,14 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/drawable-v24/txt_qr_bg.xml" value="0.2015" />
         <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/drawable/button_bg.xml" value="0.2015" />
         <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/drawable/edittext_bg.xml" value="0.2015" />
         <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/drawable/edittext_bg_red.xml" value="0.2015" />
+        <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/drawable/edittext_send_bg.xml" value="0.2015" />
         <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/drawable/elipse.xml" value="0.2015" />
         <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/drawable/ellipse_94.xml" value="0.2015" />
         <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/drawable/ic_frame_93.xml" value="0.2015" />
         <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/drawable/ic_info_section.xml" value="0.2015" />
         <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/drawable/ic_news.xml" value="0.2015" />
+        <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/drawable/ic_recieve.xml" value="0.2015" />
         <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/drawable/ic_splash_onboarding.xml" value="0.2015" />
         <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/drawable/ic_swap.xml" value="0.2015" />
         <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/drawable/ic_transactions.xml" value="0.2015" />
@@ -26,7 +29,9 @@
         <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/layout/fragment_log_in.xml" value="0.264" />
         <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/layout/fragment_news.xml" value="0.22735507246376813" />
         <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/layout/fragment_notifications.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/layout/fragment_recieve.xml" value="0.264" />
         <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/layout/fragment_second.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/layout/fragment_send.xml" value="0.264" />
         <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/layout/fragment_start.xml" value="0.2" />
         <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/layout/fragment_swap.xml" value="0.22735507246376813" />
         <entry key="..\:/Users/Denys/AndroidStudioProjects/AlgorandWallet/app/src/main/res/layout/fragment_transactions.xml" value="0.264" />
