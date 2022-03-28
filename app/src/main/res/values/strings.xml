@@ -9,4 +9,5 @@
     <string name="log_error">Mnemonic Phrase is incorrect</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str">To restore access to your wallet, enter your mnemonic phrase consisting of 25 words in the correct order.</string>
 </resources>
