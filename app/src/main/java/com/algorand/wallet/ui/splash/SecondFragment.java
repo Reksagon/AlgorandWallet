@@ -17,7 +17,7 @@ import com.algorand.wallet.databinding.FragmentStartBinding;
 public class SecondFragment extends Fragment {
 
     FragmentSecondBinding binding;
-
+    boolean go = false;
 
 
     @Override
@@ -28,7 +28,14 @@ public class SecondFragment extends Fragment {
         binding.btnRezerv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                newFragment();
+                if(!go)
+                {
+                    binding.crypto.setVisibility(View.VISIBLE);
+                    binding.welcomeImg.setVisibility(View.GONE);
+                    go = true;
+                }
+                else
+                    newFragment();
             }
         });
 
@@ -40,7 +47,7 @@ public class SecondFragment extends Fragment {
         FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.setReorderingAllowed(true);
-        transaction.replace(R.id.fragmentContainerView, new LogInFragment(), null);
+        transaction.replace(R.id.fragmentContainerView, new TwoSecondFragment(), null);
         transaction.commit();
     }
 }

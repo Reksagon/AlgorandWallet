@@ -5,7 +5,7 @@
     android:id="@+id/splash_onbo"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#FE3F18"
+    android:background="@color/active"
     android:clipToOutline="true">
 
     <View
@@ -39,10 +39,10 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="0dp"
-        android:layout_height="54dp"
-        android:src="@drawable/algorand"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
         android:layout_marginTop="46dp"
+        android:src="@drawable/algorand"
         app:layout_constraintEnd_toEndOf="@+id/ellipse_94"
         app:layout_constraintStart_toStartOf="@+id/ellipse_94"
         app:layout_constraintTop_toBottomOf="@+id/ellipse_94" />

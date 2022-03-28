@@ -39,7 +39,6 @@ public class RecieveFragment extends Fragment {
             public void onClick(View view) {
                 BottomNavigationView bottomNavigationView = getActivity().findViewById(R.id.nav_view);
                 bottomNavigationView.setSelectedItemId(R.id.navigation_wallet);
-                bottomNavigationView.setVisibility(View.VISIBLE);
             }
         });
 
@@ -49,7 +48,6 @@ public class RecieveFragment extends Fragment {
             public void handleOnBackPressed() {
                 BottomNavigationView bottomNavigationView = getActivity().findViewById(R.id.nav_view);
                 bottomNavigationView.setSelectedItemId(R.id.navigation_wallet);
-                bottomNavigationView.setVisibility(View.VISIBLE);
             }
         });
 

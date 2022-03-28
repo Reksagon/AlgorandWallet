@@ -53,6 +53,22 @@ public class WalletFragment extends Fragment {
                 navController.navigate(R.id.navigation_send);
             }
         });
+
+        binding.btnTransactions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment_activity_main);
+                navController.navigate(R.id.navigation_transactions);
+            }
+        });
+
+        binding.bttnSwap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment_activity_main);
+                navController.navigate(R.id.navigation_swap);
+            }
+        });
         return binding.getRoot();
     }
 

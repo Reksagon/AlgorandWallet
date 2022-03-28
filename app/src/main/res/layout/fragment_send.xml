@@ -12,39 +12,50 @@
         android:id="@+id/view3"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/white_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView20" />
 
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_rectangle_1_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+
     <com.github.nikartm.button.FitButton
         android:id="@+id/btn_rezerv"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="60dp"
         android:layout_marginStart="13dp"
         android:layout_marginEnd="13dp"
         android:enabled="true"
         android:gravity="center|center_vertical"
-        app:fb_backgroundColor="#FE3F18"
+        app:fb_backgroundColor="#81A0CE"
         app:fb_cornerRadius="34dp"
         app:fb_divHeight="40dp"
+        android:layout_marginBottom="30dp"
         app:fb_iconHeight="28dp"
         app:fb_iconMarginEnd="16dp"
         app:fb_iconMarginStart="20dp"
         app:fb_iconPosition="left"
         app:fb_iconWidth="28dp"
         app:fb_shape="rectangle"
-        app:fb_text="Send"
+        app:fb_text="Confirm"
         app:fb_textColor="#FFFFFF"
-        app:fb_textSize="16sp"
+        app:fb_textSize="18sp"
         app:fb_textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/warning"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageView19"
@@ -79,97 +90,39 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView19" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="0dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="12dp"
-        android:background="@drawable/edittext_send_bg"
-        android:ems="10"
-        android:fontFamily="@font/poppins_light"
-        android:gravity="center_vertical"
-        android:hint="RF7WNLC…J54ALLM"
-        android:inputType="textPersonName"
-        android:paddingStart="32dp"
-        android:paddingEnd="32dp"
-        android:textColor="#000000"
-        android:textColorHint="#736E6E"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView21" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="0dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="12dp"
-        android:background="@drawable/edittext_send_bg"
-        android:ems="10"
-        android:fontFamily="@font/poppins_light"
-        android:gravity="center_vertical"
-        android:hint="Enter  recipient's address"
-        android:inputType="textPersonName"
-        android:paddingStart="32dp"
-        android:paddingEnd="32dp"
-        android:textColor="#000000"
-        android:textColorHint="#736E6E"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView25" />
-
-    <EditText
         android:id="@+id/number_txt"
         android:layout_width="0dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="12dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/edittext_send_bg"
         android:ems="10"
-        android:fontFamily="@font/poppins_light"
+        android:fontFamily="@font/quicksand_bold"
         android:gravity="center_vertical"
         android:hint="0.0000"
         android:inputType="numberDecimal"
-        android:paddingStart="32dp"
+        android:paddingStart="47dp"
         android:paddingEnd="32dp"
-        android:textColor="#FF1717"
-        android:textColorHint="#736E6E"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView26" />
-
-    <ImageView
-        android:id="@+id/imageView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="52dp"
-        android:src="@drawable/ic_transfer_from_address"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view3" />
-
-    <ImageView
-        android:id="@+id/imageView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="27dp"
-        android:src="@drawable/ic_transfer_to_address_txt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B3FFFFFF"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView28"
+        app:layout_constraintEnd_toEndOf="@+id/imageView28"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView28"
+        app:layout_constraintTop_toTopOf="@+id/imageView28"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
         android:layout_marginStart="15dp"
+        android:layout_marginTop="27dp"
         android:src="@drawable/ic_amount__balance_algo__0_00_"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -179,21 +132,112 @@
         android:id="@+id/warning"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/ic_group_33532"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView28"
+        app:layout_constraintTop_toBottomOf="@+id/imageView28" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_rectangle_1_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/edittext_send_bg"
+        android:ems="10"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center_vertical"
+        android:hint="Enter address"
+        android:inputType="textPersonName"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B3FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+        app:layout_constraintEnd_toEndOf="@+id/imageView21"
+        app:layout_constraintStart_toStartOf="@+id/imageView21"
+        app:layout_constraintTop_toTopOf="@+id/imageView21"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_transfer_to_address"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView21"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toTopOf="@+id/imageView21" />
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_ellipse_103"
+        app:layout_constraintBottom_toBottomOf="@+id/number_txt"
+        app:layout_constraintStart_toStartOf="@+id/number_txt"
+        app:layout_constraintTop_toTopOf="@+id/number_txt" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_vector_3"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView38"
+        app:layout_constraintEnd_toEndOf="@+id/imageView38"
+        app:layout_constraintStart_toStartOf="@+id/imageView38"
+        app:layout_constraintTop_toTopOf="@+id/imageView38" />
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/ic_rectangle_1060_1"
+        app:layout_constraintBottom_toBottomOf="@+id/number_txt"
+        app:layout_constraintEnd_toEndOf="@+id/number_txt"
+        app:layout_constraintTop_toTopOf="@+id/number_txt" />
+
+    <ImageView
+        android:id="@+id/imageView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_max"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView40"
+        app:layout_constraintEnd_toEndOf="@+id/imageView40"
+        app:layout_constraintStart_toStartOf="@+id/imageView40"
+        app:layout_constraintTop_toTopOf="@+id/imageView40" />
+
+    <ImageView
+        android:id="@+id/imageView50"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_balance_algo__0_0000"
         app:layout_constraintStart_toStartOf="@+id/number_txt"
         app:layout_constraintTop_toBottomOf="@+id/number_txt" />
 
     <ImageView
-        android:id="@+id/imageView28"
+        android:id="@+id/imageView51"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="26dp"
-        android:src="@drawable/ic_max"
-        app:layout_constraintBottom_toBottomOf="@+id/number_txt"
+        android:src="@drawable/ic_balance_usd__0_00"
         app:layout_constraintEnd_toEndOf="@+id/number_txt"
-        app:layout_constraintTop_toTopOf="@+id/number_txt"
-        app:layout_constraintVertical_bias="0.49" />
+        app:layout_constraintTop_toTopOf="@+id/imageView50" />
 </androidx.constraintlayout.widget.ConstraintLayout>

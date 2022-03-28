@@ -63,7 +63,6 @@ public class SendFragment extends Fragment {
             public void onClick(View view) {
                 NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment_activity_main);
                 navController.navigate(R.id.navigation_wallet);
-                getActivity().findViewById(R.id.nav_view).setVisibility(View.VISIBLE);
             }
         });
 
@@ -73,7 +72,6 @@ public class SendFragment extends Fragment {
             public void handleOnBackPressed() {
                 NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment_activity_main);
                 navController.navigate(R.id.navigation_wallet);
-                getActivity().findViewById(R.id.nav_view).setVisibility(View.VISIBLE);
             }
         });
         return binding.getRoot();

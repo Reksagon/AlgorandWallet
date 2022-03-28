@@ -6,6 +6,8 @@ import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.MainThread;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -79,17 +81,16 @@ public class TransactionsFragment extends Fragment {
             @Override
             @MainThread
             public void handleOnBackPressed() {
-
-                BottomNavigationView bottomNavigationView = getActivity().findViewById(R.id.nav_view);
-                bottomNavigationView.setSelectedItemId(R.id.navigation_wallet);
+                NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment_activity_main);
+                navController.navigate(R.id.navigation_wallet);
             }
         });
 
         binding.imgBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                BottomNavigationView bottomNavigationView = getActivity().findViewById(R.id.nav_view);
-                bottomNavigationView.setSelectedItemId(R.id.navigation_wallet);
+                NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment_activity_main);
+                navController.navigate(R.id.navigation_wallet);
             }
         });
 

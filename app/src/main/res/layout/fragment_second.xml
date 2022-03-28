@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#FE3F18"
+    android:background="@color/active"
     android:clipToOutline="true">
 
 
@@ -62,13 +62,13 @@
         <com.github.nikartm.button.FitButton
             android:id="@+id/btn_rezerv"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="60dp"
             android:layout_marginStart="13dp"
             android:layout_marginEnd="13dp"
             android:layout_marginBottom="41dp"
             android:enabled="true"
             android:gravity="center|center_vertical"
-            app:fb_backgroundColor="#FE3F18"
+            app:fb_backgroundColor="@color/active"
             app:fb_cornerRadius="34dp"
             app:fb_divHeight="40dp"
             app:fb_iconHeight="28dp"
@@ -77,9 +77,9 @@
             app:fb_iconPosition="left"
             app:fb_iconWidth="28dp"
             app:fb_shape="rectangle"
-            app:fb_text="Log in"
+            app:fb_text="Continue"
             app:fb_textColor="#FFFFFF"
-            app:fb_textSize="16sp"
+            app:fb_textSize="18sp"
             app:fb_textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/view2"
             app:layout_constraintEnd_toEndOf="parent"
@@ -87,23 +87,99 @@
             app:layout_constraintTop_toTopOf="@+id/view2"
             app:layout_constraintVertical_bias="1.0" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="27dp"
-            android:layout_marginEnd="12dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:gravity="center_horizontal|top"
-            android:lineSpacingExtra="-7sp"
-            android:text="@string/hi_this_is"
-            android:textColor="@color/black"
-            android:textSize="24sp"
+        <ImageView
+            android:id="@+id/welcome_img"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="40dp"
+
+            android:layout_marginEnd="40dp"
+            android:visibility="visible"
             app:layout_constraintBottom_toTopOf="@+id/btn_rezerv"
-            app:layout_constraintEnd_toEndOf="@+id/view2"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/view2"
             app:layout_constraintTop_toTopOf="@+id/view2"
-            app:layout_constraintVertical_bias="0.6" />
+            app:srcCompat="@drawable/ic_welcome__log_in_and_begin_to_earn_" />
+
+        <LinearLayout
+            android:id="@+id/crypto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/btn_rezerv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView31"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/ellipse_100" />
+
+                        <ImageView
+                            android:id="@+id/imageView32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/ic_swap_crypto" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView311"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/ellipse_100" />
+
+                        <ImageView
+                            android:id="@+id/imageView322"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/ic_make_transfer" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView312"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/ellipse_100" />
+
+                        <ImageView
+                            android:id="@+id/imageView323"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/ic_buy_cryptocurrency" />
+                </LinearLayout>
+        </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

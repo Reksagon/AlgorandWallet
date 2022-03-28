@@ -86,7 +86,7 @@
                     android:id="@+id/imageView61"
                     android:layout_width="55dp"
                     android:layout_height="55dp"
-                    android:src="@drawable/elipse"
+                    android:src="@drawable/elipse_2"
                     android:visibility="visible"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView59"
                     app:layout_constraintEnd_toEndOf="@+id/imageView59"
@@ -113,40 +113,38 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="25dp"
-                android:src="@drawable/ic___algo___0_76_usd__1_"
+                android:src="@drawable/ic___algo___0_7188_usd"
                 android:visibility="visible"
                 tools:visibility="visible" />
 
-            <ImageView
-                android:id="@+id/imageView38"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/ic_income_stats"
-                android:visibility="visible"
-                tools:visibility="visible" />
-
-            <ImageView
-                android:id="@+id/imageView39"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/ic_group_33515"
-                android:visibility="visible"
-                tools:visibility="visible" />
-
-            <ImageView
-                android:id="@+id/imageView40"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="50dp"
-                android:src="@drawable/ic_group_33508"
-                android:visibility="visible"
-                tools:visibility="visible" />
+            <com.github.nikartm.button.FitButton
+                android:id="@+id/btn_rezerv"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="41dp"
+                android:enabled="true"
+                android:gravity="center|center_vertical"
+                app:fb_backgroundColor="#81A0CE"
+                app:fb_cornerRadius="34dp"
+                app:fb_divHeight="40dp"
+                app:fb_iconHeight="28dp"
+                app:fb_iconMarginEnd="16dp"
+                app:fb_iconMarginStart="20dp"
+                app:fb_iconPosition="left"
+                app:fb_iconWidth="28dp"
+                app:fb_shape="rectangle"
+                app:fb_text="Swap"
+                app:fb_textColor="#FFFFFF"
+                app:fb_textSize="18sp"
+                app:fb_textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/view2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view2"
+                app:layout_constraintVertical_bias="1.0" />
 
         </LinearLayout>
     </ScrollView>

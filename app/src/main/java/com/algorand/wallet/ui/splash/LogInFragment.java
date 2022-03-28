@@ -61,8 +61,7 @@ public class LogInFragment extends Fragment {
                 if(error)
                 {
                     binding.editTextTextMultiLine.setBackground(getActivity().getDrawable(R.drawable.edittext_bg));
-                    binding.editTextTextMultiLine.setTextColor(getActivity().getColor(R.color.black));
-                    binding.textViewLog.setText(getActivity().getString(R.string.log_in_txt));
+                    binding.imgError.setVisibility(View.GONE);
                     error = false;
                 }
             }
@@ -82,10 +81,9 @@ public class LogInFragment extends Fragment {
                 else
                 {
                     binding.editTextTextMultiLine.setBackground(getActivity().getDrawable(R.drawable.edittext_bg_red));
-                    binding.editTextTextMultiLine.setTextColor(getActivity().getColor(R.color.red));
                     error = true;
                     binding.logInBttn.setEnabled(false);
-                    binding.textViewLog.setText(getActivity().getString(R.string.log_error));
+                    binding.imgError.setVisibility(View.VISIBLE);
                 }
             }
         });
