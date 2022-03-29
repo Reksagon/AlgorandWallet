@@ -35,9 +35,7 @@ public class TransactionsFragment extends Fragment {
             public void onClick(View view) {
                 binding.btnAll.setButtonColor(getActivity().getColor(R.color.active));
                 binding.btnAll.setTextColor(getActivity().getColor(R.color.white));
-                binding.scrollAll.setVisibility(View.VISIBLE);
-                binding.scrollRecieved.setVisibility(View.GONE);
-                binding.scrollSend.setVisibility(View.GONE);
+
                 binding.btnRecieved.setButtonColor(getActivity().getColor(R.color.white));
                 binding.btnRecieved.setTextColor(getActivity().getColor(R.color.active));
                 binding.btnSend.setButtonColor(getActivity().getColor(R.color.white));
@@ -51,9 +49,6 @@ public class TransactionsFragment extends Fragment {
                 binding.btnSend.setButtonColor(getActivity().getColor(R.color.active));
                 binding.btnSend.setTextColor(getActivity().getColor(R.color.white));
 
-                binding.scrollSend.setVisibility(View.VISIBLE);
-                binding.scrollAll.setVisibility(View.GONE);
-                binding.scrollRecieved.setVisibility(View.GONE);
 
                 binding.btnRecieved.setButtonColor(getActivity().getColor(R.color.white));
                 binding.btnRecieved.setTextColor(getActivity().getColor(R.color.active));
@@ -67,9 +62,6 @@ public class TransactionsFragment extends Fragment {
             public void onClick(View view) {
                 binding.btnRecieved.setButtonColor(getActivity().getColor(R.color.active));
                 binding.btnRecieved.setTextColor(getActivity().getColor(R.color.white));
-                binding.scrollRecieved.setVisibility(View.VISIBLE);
-                binding.scrollAll.setVisibility(View.GONE);
-                binding.scrollSend.setVisibility(View.GONE);
                 binding.btnAll.setButtonColor(getActivity().getColor(R.color.white));
                 binding.btnAll.setTextColor(getActivity().getColor(R.color.active));
                 binding.btnSend.setButtonColor(getActivity().getColor(R.color.white));

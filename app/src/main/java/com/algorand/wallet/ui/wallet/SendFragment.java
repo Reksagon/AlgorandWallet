@@ -54,7 +54,8 @@ public class SendFragment extends Fragment {
         binding.btnRezerv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                binding.warning.setVisibility(View.VISIBLE);
+                if(binding.numberTxt.getText().toString().length() > 0)
+                    binding.warning.setVisibility(View.VISIBLE);
             }
         });
 

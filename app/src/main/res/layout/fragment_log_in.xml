@@ -12,19 +12,17 @@
         android:id="@+id/ellipse_"
         android:layout_width="204dp"
         android:layout_height="204dp"
-        android:layout_marginTop="42dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="50dp"
+        android:layout_marginTop="42dp"
         android:layout_marginEnd="50dp"
         android:background="@drawable/group_33533"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -50,137 +48,127 @@
         app:layout_constraintTop_toBottomOf="@+id/ellipse_"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ScrollView
-        android:id="@+id/scrollView3"
-        android:layout_width="0dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-android:layout_marginTop="20dp"
+        android:layout_marginTop="66dp"
+        android:background="@drawable/white_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView33">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/textView_log"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="34dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/str"
+            android:textColor="#326799"
+            android:textSize="10sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="500dp"
-                android:background="@drawable/white_bg">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="-7sp"
+            android:text="Enter the Mnemonic Phrase"
+            android:textColor="#326799"
+            android:textSize="18sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/textView_log"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="14dp"
-                    android:layout_marginEnd="34dp"
-                    android:fontFamily="@font/poppins_light"
-                    android:text="@string/str"
-                    android:textColor="#326799"
-                    android:textSize="10sp"
-                    android:visibility="visible"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/imageView"
-                    app:layout_constraintTop_toTopOf="@+id/imageView" />
+        <com.github.nikartm.button.FitButton
+            android:id="@+id/log_in_bttn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="16dp"
+            android:enabled="false"
+            android:gravity="center|center_vertical"
+            android:visibility="visible"
+            app:fb_backgroundColor="@color/active"
+            app:fb_cornerRadius="34dp"
+            app:fb_divHeight="40dp"
+            app:fb_iconHeight="28dp"
+            app:fb_iconMarginEnd="16dp"
+            app:fb_iconMarginStart="20dp"
+            app:fb_iconPosition="left"
+            app:fb_iconWidth="28dp"
+            app:fb_shape="rectangle"
+            app:fb_text="Confirm"
+            app:fb_textColor="#FFFFFF"
+            app:fb_textSize="16sp"
+            app:fb_textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_error"
+            app:layout_constraintVertical_bias="0.421" />
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="54dp"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:gravity="center_horizontal|top"
-                    android:lineSpacingExtra="-7sp"
-                    android:text="Enter the Mnemonic Phrase"
-                    android:textColor="#326799"
-                    android:textSize="18sp"
-                    android:visibility="visible"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/ic_vector"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
+            app:layout_constraintVertical_bias="0.0" />
 
-                <com.github.nikartm.button.FitButton
-                    android:id="@+id/log_in_bttn"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginStart="13dp"
-                    android:layout_marginEnd="12dp"
-                    android:enabled="false"
-                    android:gravity="center|center_vertical"
-                    android:visibility="visible"
-                    app:fb_backgroundColor="@color/active"
-                    app:fb_cornerRadius="34dp"
-                    app:fb_divHeight="40dp"
-                    app:fb_iconHeight="28dp"
-                    app:fb_iconMarginEnd="16dp"
-                    app:fb_iconMarginStart="20dp"
-                    app:fb_iconPosition="left"
-                    app:fb_iconWidth="28dp"
-                    app:fb_shape="rectangle"
-                    app:fb_text="Log in"
-                    app:fb_textColor="#FFFFFF"
-                    app:fb_textSize="16sp"
-                    app:fb_textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView_log"
-                    app:layout_constraintVertical_bias="0.39999998" />
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="0dp"
+            android:layout_height="98dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:paddingStart="32dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="31dp"
+            android:paddingBottom="18dp"
+            android:textColor="#326799"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="27dp"
-                    android:src="@drawable/ic_vector"
-                    android:visibility="visible"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
-                    app:layout_constraintVertical_bias="0.0" />
-
-                <EditText
-                    android:id="@+id/editTextTextMultiLine"
-                    android:layout_width="0dp"
-                    android:layout_height="98dp"
-                    android:layout_marginStart="13dp"
-                    android:layout_marginTop="29dp"
-                    android:layout_marginEnd="12dp"
-                    android:background="@drawable/edittext_bg"
-                    android:ems="10"
-                    android:fontFamily="@font/poppins_regular"
-                    android:gravity="start|top"
-                    android:inputType="textMultiLine"
-                    android:paddingStart="32dp"
-                    android:paddingTop="16dp"
-                    android:paddingEnd="31dp"
-                    android:paddingBottom="18dp"
-                    android:textColor="#326799"
-                    android:textSize="12sp"
-                    android:visibility="visible"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView2"
-                    tools:ignore="SpeakableTextPresentCheck" />
-
-                <ImageView
-                    android:id="@+id/img_error"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:visibility="gone"
-                    app:layout_constraintStart_toStartOf="@+id/imageView"
-                    app:layout_constraintTop_toBottomOf="@+id/textView_log"
-                    app:srcCompat="@drawable/ic_group_33544" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </LinearLayout>
-    </ScrollView>
+        <ImageView
+            android:id="@+id/img_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/textView_log"
+            app:srcCompat="@drawable/ic_group_33544" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
